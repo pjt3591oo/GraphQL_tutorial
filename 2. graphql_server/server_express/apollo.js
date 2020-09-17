@@ -42,6 +42,7 @@ const resolvers = {
   Query: {
     Students(parent, args, context, info) { 
       let data = studentTemp[args.num]
+      console.log("조회")
       return data 
     },
     Hello() {
@@ -66,7 +67,7 @@ const resolvers = {
         english
       }
       studentTemp[classNum].push(student)
-      
+      console.log('created')
       return student
     }
   }
