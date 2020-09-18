@@ -67,7 +67,7 @@ const resolvers = {
         english
       }
       studentTemp[classNum].push(student)
-      console.log('created')
+      console.log('created', classNum)
       return student
     }
   }

@@ -1,0 +1,24 @@
+query Students($num: Int!){
+  Students(num:$num) {
+    id,
+    name,
+    math,
+    korean,
+    english,
+  }
+}
+
+mutation AddStudent($classNum: Int!){
+  Student(
+    id: 12,
+    classNum: $classNum
+    name: "mung12"
+    math: 100
+    korean: 100
+    english: 100
+  ) {
+    id
+    name
+  }
+}
+
